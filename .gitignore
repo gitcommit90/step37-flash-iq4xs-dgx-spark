@@ -1,0 +1,16 @@
+# Weights, caches, logs — never commit these
+*.gguf
+IQ4_XS/
+BF16/
+Q8_0/
+Q4_K_S/
+Q3_K_L/
+Q3_K_M/
+IQ3_XXS/
+models/
+llm/
+*.log
+__pycache__/
+.pytest_cache/
+.cache/
+build/
