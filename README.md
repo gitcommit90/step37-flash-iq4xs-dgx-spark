@@ -76,7 +76,7 @@ hf download stepfun-ai/Step-3.7-Flash-GGUF \
 # equivalent:
 llama-server \
   --model ~/llm/step37-flash-iq4xs/IQ4_XS/Step-3.7-flash-IQ4_XS-00001-of-00003.gguf \
-  --host 0.0.0.0 --port 8088 \
+  --host 0.0.0.0 --port 8000 \
   --ctx-size 262144 --parallel 1 \
   --batch-size 2048 --ubatch-size 1024 \
   --n-gpu-layers 99 --flash-attn on \
@@ -89,7 +89,7 @@ First load ~6–8 minutes. API answers `503 Loading model` until ready.
 ### 4. Chat
 
 ```bash
-curl http://127.0.0.1:8088/v1/chat/completions \
+curl http://127.0.0.1:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
     "model": "Step-3.7-flash-IQ4_XS-00001-of-00003.gguf",

@@ -7,7 +7,7 @@ set -euo pipefail
 LLAMA_BIN="${LLAMA_BIN:-$HOME/llama.cpp-step37/build/bin/llama-server}"
 MODEL_DIR="${MODEL_DIR:-$HOME/llm/step37-flash-iq4xs}"
 MODEL="$MODEL_DIR/IQ4_XS/Step-3.7-flash-IQ4_XS-00001-of-00003.gguf"
-PORT="${PORT:-8088}"
+PORT="${PORT:-8000}"
 CTX="${CTX:-262144}"
 PARALLEL="${PARALLEL:-1}"
 LOG="$MODEL_DIR/server-256k.log"

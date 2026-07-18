@@ -229,7 +229,7 @@ def run_level(
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--base-url", default="http://127.0.0.1:8088")
+    p.add_argument("--base-url", default="http://127.0.0.1:8000")
     p.add_argument("--model", default="Step-3.7-flash-IQ4_XS-00001-of-00003.gguf")
     p.add_argument("--levels", default="1,4,10")
     p.add_argument("--max-tokens", type=int, default=256)
